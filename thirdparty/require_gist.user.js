@@ -14,7 +14,7 @@
       var raw_link = jQuery("a[href^=/raw]:first");
       if (raw_link.length) {
         jQuery.get(raw_link.attr("href"), function(data) {
-          var require_gist_code = "require_gist \"" + raw_link.attr("href").replace("/raw/", "") + "\", \"" + SHA1(data) + "\" # " + window.location.href;
+          var require_gist_code = "require \"require_gist\"; require_gist \"" + raw_link.attr("href").replace("/raw/", "") + "\", \"" + SHA1(data) + "\" # " + window.location.href;
           var label = "<td class=\"label\">require_gist:</td>";
           var code = "<td>" +
                      "<a class=\"gist-embed-link\" href=\"#\" style=\"display: inline;\">show code</a>" +

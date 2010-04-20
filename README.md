@@ -11,3 +11,9 @@ from your Ruby code
 Comes with handy [Greasemonkey](https://addons.mozilla.org/addon/748) extension. 
 [Install extension](http://userscripts.org/scripts/show/74844) to generate require
 snippets like the one above directly on the Gist page.
+
+### Details
+
+Caches required Gists per user (in `~/.gist` directory), the second argument to
+`require_gist` is the SHA1 of the Gist content, if local copy has different SHA1
+`LoadError` will be raised.
