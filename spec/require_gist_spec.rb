@@ -6,7 +6,7 @@ require "require_gist"
 
 describe "RequireGist" do
   it "requires gists" do
-    require_gist "https://gist.github.com/raw/372689/df2b91fc88db48e3fa58a1cfffdbf214651a1bbf/require_gist_test_gist.rb"
+    require_gist "372689/df2b91fc88db48e3fa58a1cfffdbf214651a1bbf/require_gist_test_gist.rb"
     ::RequireGistTestGist.should == 4
   end
 

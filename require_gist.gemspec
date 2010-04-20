@@ -2,14 +2,14 @@
 
 Gem::Specification.new do |s|
   s.name = %q{require_gist}
-  s.version = "0.0.1"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Evgeniy Dolzhenko"]
   s.date = %q{2010-04-20}
   s.email = %q{dolzenko@gmail.com}
-  s.files = ["lib/require_gist.rb", "spec/require_gist_spec.rb", "spec/require_gist_test_gist.rb", "thirdparty/require_gist.user.js"]
-  s.homepage = %q{http://dolzhenko.org}
+  s.files = ["lib/require_gist.rb", "require_gist.gemspec", "spec/require_gist_spec.rb", "spec/require_gist_test_gist.rb", "thirdparty/require_gist.user.js"]
+  s.homepage = %q{http://github.com/dolzenko/require_gist}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.6}
   s.summary = %q{Require code directly from GitHub's Gists}

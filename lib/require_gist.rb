@@ -3,7 +3,7 @@ require "open-uri"
 
 def require_gist(gist_url, gist_sha1 = nil)
   if gist_url =~ /^\d/
-    gist_url = "https://gist.github.com/raw/#{ gist_url }"
+    gist_url = "http://gist.github.com/raw/#{ gist_url }"
   end
   gist_id, gist_rev, file = gist_url.match(%r{ https://gist.github.com/raw/(.+?)/(.+?)/(.+) }x).captures
   dir = FileUtils.mkdir_p(File.join(ENV["HOME"], ".gist"))
